@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.first{
+    background-image: linear-gradient(180deg, #01E1FF 0%, #1071FF 100%)
+}
+.first .logo{
+    background: url("../img/logo.png");
+    width: 251px;
+    height: 186px;
+    margin:0 auto;
+    position: relative;
+    top: 80px;
+}
+.first .text{
+    margin:160px auto 0;
+    text-align: center;
+}
+.first .text > img:first-of-type{
+    margin-left:0px;
+}
+.first .text > img{
+    margin-left:60px;
+    opacity: 0.1;
+}
+.first.current .text > img{
+    transition: all 1s linear;
+    margin-left:10px;
+    opacity: 1;
+}
+.first .intro{
+    background: url("../img/info_1.png");
+    width: 772px;
+    height: 49px;
+    margin:40px auto 0;
+}
+
+
+.second{
+    position: relative;
+   background-image: linear-gradient(181deg, #54FD9D 0%, #0B9E4F 100%)
+}
+.second .box{
+    font-size: 0px;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    transform: translate(-100%,-50%);
+}
+.second .box > img:nth-of-type(1){
+    /*添加多个变换效果，以空格分隔*/
+    transform: translate(-100px,-100px) rotate(45deg);
+}
+.second .box > img:nth-of-type(2){
+    transform: translate(-100px,-100px) rotate(-30deg);
+}
+.second .box > img:nth-of-type(3){
+    transform: translate(200px,200px) rotate(60deg);
+}
+.second .box > img:nth-of-type(4){
+    transform: translate(-200px,-200px) rotate(-60deg);
+}
+.second .box > img:nth-of-type(5){
+    transform: translate(150px,150px) rotate(90deg);
+}
+.second .box > img:nth-of-type(6){
+    transform: translate(50px,150px) rotate(-90deg);
+}
+.second .box > img:nth-of-type(7){
+    transform: translate(-150px,-150px) rotate(60deg);
+}
+.second .box > img:nth-of-type(8){
+    transform: translate(10px,-250px) rotate(-90deg);
+}
+.second .box > img:nth-of-type(9){
+    transform: translate(-250px,10px) rotate(45deg);
+}
+.second .box > img{
+    opacity: 0;
+}
+.second.current .box > img{
+    transition: transform 1s,opacity 1s;
+    transform:none;
+    opacity: 1;
+}
+.second .info{
+    background: url("../img/info_2.png");
+    width: 635px;
+    height: 309px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+
+.third{
+    position: relative;
+    background-image: linear-gradient(0deg, #DA932F 0%, #DE820C 100%)
+}
+.third .left{
+    background: url("../img/info_3.png");
+    width: 631px;
+    height: 278px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%,-50%);
+}
+.third .right{
+    background: url("../img/circle.png");
+    width: 453px;
+    height: 449px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(120%,-50%);
+}
+.third .right > .rocket{
+    background: url("../img/rocket.png");
+    width: 203px;
+    height: 204px;
+    position: absolute;
+    left: -90px;
+    top: 350px;
+    opacity: 0;
+}
+.third.current .right > .rocket{
+    transition: all 1s;
+    left: 125px;
+    top: 125px;
+    opacity: 1;
+}
+
+
+.fourth{
+    position: relative;
+    background-image: linear-gradient(181deg, #30E3CA 0%, #11999E 100%)
+}
+.fourth .search{
+    width: 529px;
+    height: 438px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-120%,-50%);
+    overflow: hidden;
+}
+.fourth .search .searchBox{
+    background: url("../img/search.png");
+    width: 529px;
+    height: 66px;
+    transform: translateX(-100%);
+}
+.fourth.current .search .searchBox{
+    transition: transform 1s linear;
+    transform: none;
+}
+.fourth .search .searchText{
+    background: url("../img/key.png");
+    width: 0px;
+    height: 22px;
+    position: absolute;
+    left: 15px;
+    top:22px;
+}
+.fourth.current .search .searchText{
+    transition: width 1s 1s steps(5);
+    width :100px;
+}
+.fourth .search .searchResult{
+    background: url("../img/result.png");
+    width: 529px;
+    height: 0px;
+    margin-top:-15px;
+}
+.fourth.current .search .searchResult{
+    transition: height 1s 2s;
+    height :372px;
+}
+.fourth .info{
+    background: url("../img/info_4.png");
+    width: 612px;
+    height: 299px; 
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(100%,-50%);
+}
+
+
